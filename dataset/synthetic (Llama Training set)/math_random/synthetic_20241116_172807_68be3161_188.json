@@ -1,0 +1,12 @@
+{
+  "problem": "If $\\sqrt{5+n}=7$, then what is the value of $n$?",
+  "solution": {
+    "final_solution": "",
+    "working_out": "First thoughts: When I see the equation \\(\\sqrt{5+n}=7\\), my mind immediately jumps to the idea of isolating \\(n\\). This equation involves a square root, and I know that to eliminate a square root, I'll need to square both sides. This problem feels reminiscent of other problems involving solving for variables inside functions, like when we solve for \\(x\\) in \\(\\sqrt{x} = a\\).\n\n**Step 1: Understand and explore the problem**\n\nThe given equation is \\(\\sqrt{5+n}=7\\). To isolate the variable \\(n\\), I'll need to \"unwrap\" the square root. \n\nOne strategy clearly stands out: squaring both sides to eliminate the square root. \n\n**Step 2: Apply the strategy**\n\nSquaring both sides of the equation:\n\\[ \\left(\\sqrt{5+n}\\right)^2 = 7^2 \\]\n\nCalculating, I get:\n\\[ 5+n = 49 \\]\n\n**Step 3: Isolate the variable \\(n\\)**\n\nNow that the square root is eliminated, I have a simple linear equation. To solve for \\(n\\), I'll subtract 5 from both sides:\n\\[ 5+n - 5 = 49 - 5 \\]\n\\[ n = 44 \\]\n\n**Step 4: Check the solution**\n\nI should substitute \\(n = 44\\) back into the original equation to verify it satisfies the condition. Let's check:\n\nOriginal equation: \\(\\sqrt{5+n} = 7\\)\n\nSubstitute \\(n = 44\\):\n\\[\\sqrt{5+44} = \\sqrt{49} = 7\\]\n\nSince both sides of the equation equal 7, the solution \\(n = 44\\) checks out.\n\n**Reflection:**\n\n- **Initial thought strategy:** Squaring both sides was the most straightforward approach for this problem. It quickly simplified the equation and isolated \\(n\\).\n- **Correctness check:** The substitution confirmed that the solution is correct. Everything matches up.\n- **Alternative methods:** Although this problem was simple and didn\u2019t necessitate multiple strategies, it is always good practice to reconsider possible mistakes like miscalculating squares or arithmetic errors. There were no obvious alternative approaches in this case, since squaring is naturally the next logical step after encountering a square root.\n\nFinal answer: \\(n = 44\\).",
+    "is_correct": true,
+    "iterations": 1,
+    "error_description": null,
+    "log_directory": "logs/solutions/20241116_172759"
+  },
+  "ground_truth": "Since $\\sqrt{5+n}=7$ and $7=\\sqrt{49}$, then $5+n=49$, so $n=\\boxed{44}$."
+}

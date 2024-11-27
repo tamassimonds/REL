@@ -1,0 +1,1660 @@
+### Question:
+Three spheres with radii $11$, $13$, and $19$ are mutually externally tangent. A plane intersects the spheres in three congruent circles centered at $A$, $B$, and $C$, respectively, and the centers of the spheres all lie on the same side of this plane. Suppose that $AB^2 = 560$. Find $AC^2$.
+### Answer:
+Alright, let's tackle this geometry problem step by step. I'll walk through my thought process, explore different strategies, and adjust my approach as needed to arrive at the correct solution.
+
+Problem Statement: Three spheres with radii 11, 13, and 19 are mutually externally tangent. A plane intersects the spheres in three congruent circles centered at points 
+𝐴
+A, 
+𝐵
+B, and 
+𝐶
+C, respectively. All centers of the spheres lie on the same side of the plane. Given that 
+𝐴
+𝐵
+2
+=
+560
+AB 
+2
+ =560, we need to find 
+𝐴
+𝐶
+2
+AC 
+2
+ .
+
+Initial Thoughts and Strategy: We have three spheres that are externally tangent to each other, meaning each pair of spheres touches at exactly one point without overlapping. The plane intersects each sphere, creating congruent circles. Since the circles are congruent, their radii are equal.
+
+Given that the spheres are tangent and their radii are known, the distances between the centers of the spheres should relate to the sum of their radii. This seems like a good starting point.
+
+Step 1: Understanding the Configuration Let’s denote the radii of the spheres as follows:
+
+Sphere 1: Radius 
+𝑅
+1
+=
+11
+R 
+1
+​
+ =11
+Sphere 2: Radius 
+𝑅
+2
+=
+13
+R 
+2
+​
+ =13
+Sphere 3: Radius 
+𝑅
+3
+=
+19
+R 
+3
+​
+ =19
+Since the spheres are mutually externally tangent:
+
+The distance between centers of Sphere 1 and Sphere 2, 
+∣
+𝑆
+1
+𝑆
+2
+∣
+=
+𝑅
+1
++
+𝑅
+2
+=
+24
+∣S 
+1
+​
+ S 
+2
+​
+ ∣=R 
+1
+​
+ +R 
+2
+​
+ =24
+The distance between centers of Sphere 1 and Sphere 3, 
+∣
+𝑆
+1
+𝑆
+3
+∣
+=
+𝑅
+1
++
+𝑅
+3
+=
+30
+∣S 
+1
+​
+ S 
+3
+​
+ ∣=R 
+1
+​
+ +R 
+3
+​
+ =30
+The distance between centers of Sphere 2 and Sphere 3, 
+∣
+𝑆
+2
+𝑆
+3
+∣
+=
+𝑅
+2
++
+𝑅
+3
+=
+32
+∣S 
+2
+​
+ S 
+3
+​
+ ∣=R 
+2
+​
+ +R 
+3
+​
+ =32
+Step 2: Relating Sphere Centers to the Plane The plane intersects each sphere, creating congruent circles. Let’s denote:
+
+The distance from Sphere 1's center to the plane as 
+ℎ
+1
+h 
+1
+​
+ 
+The distance from Sphere 2's center to the plane as 
+ℎ
+2
+h 
+2
+​
+ 
+The distance from Sphere 3's center to the plane as 
+ℎ
+3
+h 
+3
+​
+ 
+The radius of each congruent circle as 
+𝑟
+r
+Using the Pythagorean theorem for each sphere: 
+𝑅
+𝑖
+2
+=
+𝑟
+2
++
+ℎ
+𝑖
+2
+R 
+i
+2
+​
+ =r 
+2
+ +h 
+i
+2
+​
+  Since all circles are congruent, 
+𝑟
+r is the same for each, so: 
+1
+1
+2
+=
+𝑟
+2
++
+ℎ
+1
+2
+11 
+2
+ =r 
+2
+ +h 
+1
+2
+​
+  
+1
+3
+2
+=
+𝑟
+2
++
+ℎ
+2
+2
+13 
+2
+ =r 
+2
+ +h 
+2
+2
+​
+  
+1
+9
+2
+=
+𝑟
+2
++
+ℎ
+3
+2
+19 
+2
+ =r 
+2
+ +h 
+3
+2
+​
+ 
+
+Step 3: Solving for 
+ℎ
+𝑖
+h 
+i
+​
+  in Terms of 
+𝑟
+r From the equations above: 
+ℎ
+1
+2
+=
+1
+1
+2
+−
+𝑟
+2
+h 
+1
+2
+​
+ =11 
+2
+ −r 
+2
+  
+ℎ
+2
+2
+=
+1
+3
+2
+−
+𝑟
+2
+h 
+2
+2
+​
+ =13 
+2
+ −r 
+2
+  
+ℎ
+3
+2
+=
+1
+9
+2
+−
+𝑟
+2
+h 
+3
+2
+​
+ =19 
+2
+ −r 
+2
+ 
+
+At this point, I realize that 
+𝑟
+r is a common variable that we need to find. However, we also know the distances between the sphere centers. This suggests that we might need to relate 
+ℎ
+𝑖
+h 
+i
+​
+  to the positions of 
+𝐴
+A, 
+𝐵
+B, and 
+𝐶
+C in the plane.
+
+Step 4: Positioning the Centers in 3D Space Let’s consider the plane as the 
+𝑥
+𝑦
+xy-plane for simplicity. Then, the centers of the spheres can be represented as:
+
+Sphere 1: 
+(
+𝑥
+1
+,
+𝑦
+1
+,
+ℎ
+1
+)
+(x 
+1
+​
+ ,y 
+1
+​
+ ,h 
+1
+​
+ )
+Sphere 2: 
+(
+𝑥
+2
+,
+𝑦
+2
+,
+ℎ
+2
+)
+(x 
+2
+​
+ ,y 
+2
+​
+ ,h 
+2
+​
+ )
+Sphere 3: 
+(
+𝑥
+3
+,
+𝑦
+3
+,
+ℎ
+3
+)
+(x 
+3
+​
+ ,y 
+3
+​
+ ,h 
+3
+​
+ )
+The centers 
+𝐴
+A, 
+𝐵
+B, and 
+𝐶
+C of the circles in the plane correspond to 
+(
+𝑥
+1
+,
+𝑦
+1
+,
+0
+)
+(x 
+1
+​
+ ,y 
+1
+​
+ ,0), 
+(
+𝑥
+2
+,
+𝑦
+2
+,
+0
+)
+(x 
+2
+​
+ ,y 
+2
+​
+ ,0), and 
+(
+𝑥
+3
+,
+𝑦
+3
+,
+0
+)
+(x 
+3
+​
+ ,y 
+3
+​
+ ,0), respectively.
+
+Step 5: Calculating Distances Between Sphere Centers The distance between Sphere 1 and Sphere 2: 
+∣
+𝑆
+1
+𝑆
+2
+∣
+2
+=
+(
+𝑥
+1
+−
+𝑥
+2
+)
+2
++
+(
+𝑦
+1
+−
+𝑦
+2
+)
+2
++
+(
+ℎ
+1
+−
+ℎ
+2
+)
+2
+=
+2
+4
+2
+=
+576
+∣S 
+1
+​
+ S 
+2
+​
+ ∣ 
+2
+ =(x 
+1
+​
+ −x 
+2
+​
+ ) 
+2
+ +(y 
+1
+​
+ −y 
+2
+​
+ ) 
+2
+ +(h 
+1
+​
+ −h 
+2
+​
+ ) 
+2
+ =24 
+2
+ =576
+
+Similarly: 
+∣
+𝑆
+1
+𝑆
+3
+∣
+2
+=
+(
+𝑥
+1
+−
+𝑥
+3
+)
+2
++
+(
+𝑦
+1
+−
+𝑦
+3
+)
+2
++
+(
+ℎ
+1
+−
+ℎ
+3
+)
+2
+=
+3
+0
+2
+=
+900
+∣S 
+1
+​
+ S 
+3
+​
+ ∣ 
+2
+ =(x 
+1
+​
+ −x 
+3
+​
+ ) 
+2
+ +(y 
+1
+​
+ −y 
+3
+​
+ ) 
+2
+ +(h 
+1
+​
+ −h 
+3
+​
+ ) 
+2
+ =30 
+2
+ =900 
+∣
+𝑆
+2
+𝑆
+3
+∣
+2
+=
+(
+𝑥
+2
+−
+𝑥
+3
+)
+2
++
+(
+𝑦
+2
+−
+𝑦
+3
+)
+2
++
+(
+ℎ
+2
+−
+ℎ
+3
+)
+2
+=
+3
+2
+2
+=
+1024
+∣S 
+2
+​
+ S 
+3
+​
+ ∣ 
+2
+ =(x 
+2
+​
+ −x 
+3
+​
+ ) 
+2
+ +(y 
+2
+​
+ −y 
+3
+​
+ ) 
+2
+ +(h 
+2
+​
+ −h 
+3
+​
+ ) 
+2
+ =32 
+2
+ =1024
+
+But from the problem statement, we also know 
+𝐴
+𝐵
+2
+=
+560
+AB 
+2
+ =560. Since 
+𝐴
+A and 
+𝐵
+B are the centers of the circles in the plane, 
+𝐴
+𝐵
+2
+=
+(
+𝑥
+1
+−
+𝑥
+2
+)
+2
++
+(
+𝑦
+1
+−
+𝑦
+2
+)
+2
+=
+560
+AB 
+2
+ =(x 
+1
+​
+ −x 
+2
+​
+ ) 
+2
+ +(y 
+1
+​
+ −y 
+2
+​
+ ) 
+2
+ =560.
+
+Step 6: Relating the Distances From the distance between Sphere 1 and Sphere 2: 
+(
+𝑥
+1
+−
+𝑥
+2
+)
+2
++
+(
+𝑦
+1
+−
+𝑦
+2
+)
+2
++
+(
+ℎ
+1
+−
+ℎ
+2
+)
+2
+=
+576
+(x 
+1
+​
+ −x 
+2
+​
+ ) 
+2
+ +(y 
+1
+​
+ −y 
+2
+​
+ ) 
+2
+ +(h 
+1
+​
+ −h 
+2
+​
+ ) 
+2
+ =576 But 
+(
+𝑥
+1
+−
+𝑥
+2
+)
+2
++
+(
+𝑦
+1
+−
+𝑦
+2
+)
+2
+=
+560
+(x 
+1
+​
+ −x 
+2
+​
+ ) 
+2
+ +(y 
+1
+​
+ −y 
+2
+​
+ ) 
+2
+ =560, so: 
+560
++
+(
+ℎ
+1
+−
+ℎ
+2
+)
+2
+=
+576
+560+(h 
+1
+​
+ −h 
+2
+​
+ ) 
+2
+ =576 
+(
+ℎ
+1
+−
+ℎ
+2
+)
+2
+=
+16
+(h 
+1
+​
+ −h 
+2
+​
+ ) 
+2
+ =16 
+ℎ
+1
+−
+ℎ
+2
+=
+±
+4
+h 
+1
+​
+ −h 
+2
+​
+ =±4
+
+Reflection: At this point, I see that the difference in heights between Sphere 1 and Sphere 2 is 4 units. However, since all sphere centers are on the same side of the plane, their heights should have the same sign. I need to consider whether 
+ℎ
+1
+h 
+1
+​
+  is greater than 
+ℎ
+2
+h 
+2
+​
+  or vice versa.
+
+Assumption: Let's assume 
+ℎ
+1
+>
+ℎ
+2
+h 
+1
+​
+ >h 
+2
+​
+ , so 
+ℎ
+1
+−
+ℎ
+2
+=
+4
+h 
+1
+​
+ −h 
+2
+​
+ =4. We can adjust later if needed.
+
+Step 7: Expressing 
+ℎ
+𝑖
+h 
+i
+​
+  in Terms of 
+𝑟
+r From earlier: 
+ℎ
+1
+=
+1
+1
+2
+−
+𝑟
+2
+h 
+1
+​
+ = 
+11 
+2
+ −r 
+2
+ 
+​
+  
+ℎ
+2
+=
+1
+3
+2
+−
+𝑟
+2
+h 
+2
+​
+ = 
+13 
+2
+ −r 
+2
+ 
+​
+ 
+
+Given 
+ℎ
+1
+−
+ℎ
+2
+=
+4
+h 
+1
+​
+ −h 
+2
+​
+ =4: 
+121
+−
+𝑟
+2
+−
+169
+−
+𝑟
+2
+=
+4
+121−r 
+2
+ 
+​
+ − 
+169−r 
+2
+ 
+​
+ =4
+
+This equation looks a bit messy. Maybe there's a better approach.
+
+Alternative Strategy: Using Differences of Squares Instead of dealing directly with square roots, let's consider the difference of squares:
+
+ℎ
+1
+2
+−
+ℎ
+2
+2
+=
+(
+121
+−
+𝑟
+2
+)
+−
+(
+169
+−
+𝑟
+2
+)
+=
+121
+−
+169
+=
+−
+48
+h 
+1
+2
+​
+ −h 
+2
+2
+​
+ =(121−r 
+2
+ )−(169−r 
+2
+ )=121−169=−48
+
+But also: 
+ℎ
+1
+2
+−
+ℎ
+2
+2
+=
+(
+ℎ
+1
+−
+ℎ
+2
+)
+(
+ℎ
+1
++
+ℎ
+2
+)
+=
+4
+(
+ℎ
+1
++
+ℎ
+2
+)
+=
+−
+48
+h 
+1
+2
+​
+ −h 
+2
+2
+​
+ =(h 
+1
+​
+ −h 
+2
+​
+ )(h 
+1
+​
+ +h 
+2
+​
+ )=4(h 
+1
+​
+ +h 
+2
+​
+ )=−48 
+ℎ
+1
++
+ℎ
+2
+=
+−
+12
+h 
+1
+​
+ +h 
+2
+​
+ =−12
+
+Wait a minute—this leads to a contradiction because heights are distances and should be positive. This suggests that our initial assumption 
+ℎ
+1
+−
+ℎ
+2
+=
+4
+h 
+1
+​
+ −h 
+2
+​
+ =4 might be incorrect. Let's try 
+ℎ
+1
+−
+ℎ
+2
+=
+−
+4
+h 
+1
+​
+ −h 
+2
+​
+ =−4:
+
+(
+ℎ
+1
+−
+ℎ
+2
+)
+=
+−
+4
+(h 
+1
+​
+ −h 
+2
+​
+ )=−4 
+(
+ℎ
+1
++
+ℎ
+2
+)
+(
+ℎ
+1
+−
+ℎ
+2
+)
+=
+−
+48
+(h 
+1
+​
+ +h 
+2
+​
+ )(h 
+1
+​
+ −h 
+2
+​
+ )=−48 
+(
+ℎ
+1
++
+ℎ
+2
+)
+(
+−
+4
+)
+=
+−
+48
+(h 
+1
+​
+ +h 
+2
+​
+ )(−4)=−48 
+ℎ
+1
++
+ℎ
+2
+=
+12
+h 
+1
+​
+ +h 
+2
+​
+ =12
+
+Now, combining: 
+ℎ
+1
+−
+ℎ
+2
+=
+−
+4
+h 
+1
+​
+ −h 
+2
+​
+ =−4 
+ℎ
+1
++
+ℎ
+2
+=
+12
+h 
+1
+​
+ +h 
+2
+​
+ =12
+
+Adding the two equations: 
+2
+ℎ
+1
+=
+8
+2h 
+1
+​
+ =8 
+ℎ
+1
+=
+4
+h 
+1
+​
+ =4
+
+Subtracting: 
+2
+ℎ
+2
+=
+16
+2h 
+2
+​
+ =16 
+ℎ
+2
+=
+8
+h 
+2
+​
+ =8
+
+Step 8: Solving for 
+𝑟
+r Now, using 
+ℎ
+1
+=
+4
+h 
+1
+​
+ =4: 
+ℎ
+1
+2
++
+𝑟
+2
+=
+1
+1
+2
+h 
+1
+2
+​
+ +r 
+2
+ =11 
+2
+  
+16
++
+𝑟
+2
+=
+121
+16+r 
+2
+ =121 
+𝑟
+2
+=
+105
+r 
+2
+ =105
+
+So, 
+𝑟
+=
+105
+r= 
+105
+​
+ . We can keep it as 
+𝑟
+2
+=
+105
+r 
+2
+ =105 for simplicity.
+
+Step 9: Finding 
+ℎ
+3
+h 
+3
+​
+  We need to find 
+ℎ
+3
+h 
+3
+​
+  using the same approach. Let's consider the distance between Sphere 1 and Sphere 3:
+
+∣
+𝑆
+1
+𝑆
+3
+∣
+2
+=
+(
+𝑥
+1
+−
+𝑥
+3
+)
+2
++
+(
+𝑦
+1
+−
+𝑦
+3
+)
+2
++
+(
+ℎ
+1
+−
+ℎ
+3
+)
+2
+=
+900
+∣S 
+1
+​
+ S 
+3
+​
+ ∣ 
+2
+ =(x 
+1
+​
+ −x 
+3
+​
+ ) 
+2
+ +(y 
+1
+​
+ −y 
+3
+​
+ ) 
+2
+ +(h 
+1
+​
+ −h 
+3
+​
+ ) 
+2
+ =900
+
+But we don't know 
+∣
+𝐴
+−
+𝐶
+∣
+2
+∣A−C∣ 
+2
+  yet. However, we're ultimately interested in 
+𝐴
+𝐶
+2
+AC 
+2
+ , so let's see if we can relate these.
+
+Alternatively, let's use the relationship between 
+ℎ
+𝑖
+h 
+i
+​
+  and 
+𝑟
+r:
+
+ℎ
+3
+2
+=
+1
+9
+2
+−
+𝑟
+2
+=
+361
+−
+105
+=
+256
+h 
+3
+2
+​
+ =19 
+2
+ −r 
+2
+ =361−105=256 
+ℎ
+3
+=
+16
+h 
+3
+​
+ =16
+
+Step 10: Using the Distance Between Sphere 1 and Sphere 3 Now, from the distance between Sphere 1 and Sphere 3:
+
+∣
+𝑆
+1
+𝑆
+3
+∣
+2
+=
+∣
+𝐴
+−
+𝐶
+∣
+2
++
+(
+ℎ
+1
+−
+ℎ
+3
+)
+2
+=
+900
+∣S 
+1
+​
+ S 
+3
+​
+ ∣ 
+2
+ =∣A−C∣ 
+2
+ +(h 
+1
+​
+ −h 
+3
+​
+ ) 
+2
+ =900 
+∣
+𝐴
+−
+𝐶
+∣
+2
++
+(
+4
+−
+16
+)
+2
+=
+900
+∣A−C∣ 
+2
+ +(4−16) 
+2
+ =900 
+∣
+𝐴
+−
+𝐶
+∣
+2
++
+(
+−
+12
+)
+2
+=
+900
+∣A−C∣ 
+2
+ +(−12) 
+2
+ =900 
+∣
+𝐴
+−
+𝐶
+∣
+2
++
+144
+=
+900
+∣A−C∣ 
+2
+ +144=900 
+∣
+𝐴
+−
+𝐶
+∣
+2
+=
+756
+∣A−C∣ 
+2
+ =756
+
+Conclusion: After carefully navigating through the relationships between the sphere centers, their distances, and their intersections with the plane, we've determined that 
+𝐴
+𝐶
+2
+=
+756
+AC 
+2
+ =756.
+
+Answer: 
+756
+756
+​

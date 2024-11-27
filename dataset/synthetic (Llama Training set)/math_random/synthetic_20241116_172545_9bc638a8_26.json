@@ -1,0 +1,12 @@
+{
+  "problem": "What is the discriminant of $3x^2 - 7x - 12$?",
+  "solution": {
+    "final_solution": "",
+    "working_out": "Alright, let's dive into the problem-solving process for finding the discriminant of the quadratic equation \\(3x^2 - 7x - 12\\).\n\n### Step 1: Understanding the Concept\nFirst, when I see the term \"discriminant,\" I immediately remember that it relates to the quadratic formula. The formula is:\n\\[ ax^2 + bx + c = 0 \\]\nAnd the discriminant part of it is given by:\n\\[ \\Delta = b^2 - 4ac \\]\nThe discriminant tells us about the nature of the roots of the quadratic equation. \n\n### Step 2: Identifying the Coefficients\nNow, let's identify the coefficients of the quadratic equation \\(3x^2 - 7x - 12\\):\n- \\( a = 3 \\)\n- \\( b = -7 \\)\n- \\( c = -12 \\)\n\n### Step 3: Applying the Discriminant Formula\nUsing the formula for the discriminant:\n\\[ \\Delta = b^2 - 4ac \\]\n\nI start by substituting the identified values:\n- \\( b = -7 \\) gives \\( b^2 = (-7)^2 = 49 \\)\n- \\( 4ac = 4 \\times 3 \\times (-12) = -144 \\)\n\nNow, substitute these into the discriminant formula:\n\\[ \\Delta = 49 - (-144) \\]\n\n### Step 4: Handling the Double Negation\nOh! I realize there's a double negation here. This becomes:\n\\[ \\Delta = 49 + 144 \\]\n\nSo continuing with the simple arithmetic:\n\\[ \\Delta = 193 \\]\n\n### Step 5: Reflecting on the Calculation\nLet me take a moment to reflect on what this tells us:\n- The discriminant is positive (\\(193\\)), which means the quadratic equation has two distinct real roots.\n\nLet me check if everything was calculated correctly. The formula application seems right, and I didn\u2019t miss any details with arithmetic operations.\n\n### Step 6: Conclusion\nThe discriminant of \\(3x^2 - 7x - 12\\) is \\(193\\). This calculation looks solid because everything checks out with my understanding of the formula and the arithmetic looks correct. \n\nSo, to sum up, the quadratic discriminant process involved understanding what the discriminant means, identifying coefficients, applying the formula, computing, and reflecting on the result. This approach confirmed that calculation and the conceptual understanding aligned.",
+    "is_correct": true,
+    "iterations": 1,
+    "error_description": null,
+    "log_directory": "logs/solutions/20241116_172534"
+  },
+  "ground_truth": "We simply plug into $b^2 - 4ac = (-7)^2 - 4(3)(-12) = 49 + 144 = \\boxed{193},$ and that is our answer."
+}

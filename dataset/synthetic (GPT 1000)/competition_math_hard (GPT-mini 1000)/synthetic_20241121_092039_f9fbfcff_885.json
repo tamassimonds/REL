@@ -1,0 +1,5 @@
+{
+  "problem": "Given that $8^{-1} \\equiv 85 \\pmod{97}$, find $64^{-1} \\pmod{97}$, as a residue modulo 97.  (Give an answer between 0 and 96, inclusive.)",
+  "solution": "To find \\( 64^{-1} \\mod 97 \\), we can utilize the known inverse \\( 8^{-1} \\equiv 85 \\mod 97 \\). Since \\( 64 \\) can be expressed as \\( 8^2 \\), we can relate the inverses:\n\n\\[\n64^{-1} \\equiv (8^2)^{-1} \\equiv (8^{-1})^2 \\mod 97\n\\]\n\nSubstituting \\( 8^{-1} \\equiv 85 \\mod 97 \\) into the equation gives us:\n\n\\[\n64^{-1} \\equiv (85)^2 \\mod 97\n\\]\n\nNext, we calculate \\( 85^2 \\):\n\n\\[\n85^2 = 7225\n\\]\n\nTo find \\( 7225 \\mod 97 \\), we perform the division:\n\n\\[\n7225 \\div 97 \\approx 74.4854\n\\]\n\nThis indicates that \\( 97 \\times 74 = 7178 \\). We can now compute:\n\n\\[\n7225 - 7178 = 47\n\\]\n\nThus, we find:\n\n\\[\n7225 \\equiv 47 \\mod 97\n\\]\n\nWe conclude that:\n\n\\[\n64^{-1} \\equiv 47 \\mod 97\n\\]\n\nThe final answer is:\n\n\\[\n\\boxed{47}\n\\]",
+  "ground_truth": "Since $8^{-1} \\equiv 85 \\pmod{97}$, $64^{-1} \\equiv (8^2)^{-1} \\equiv (8^{-1})^2 \\equiv 85^2 \\equiv \\boxed{47} \\pmod{97}$."
+}
