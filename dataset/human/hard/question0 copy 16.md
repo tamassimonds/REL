@@ -6,7 +6,6 @@ Recall that a palindrome is a number that reads the same forward and backward. F
 
 ### Answer:
 
-Ah, I see I've made an error in my previous solution. Let's walk through the problem again, step by step, to identify where things went wrong and arrive at the correct answer.
 
 **Problem Statement:**
 Find the greatest integer less than \(1000\) that is a palindrome both in base ten and base eight. For example, \(292_{10} = 444_8\) is such a number.
