@@ -7,7 +7,7 @@ import random
 from huggingface_hub import login, DatasetCard
 
 # Remove the hardcoded token and use login() instead
-login("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")  # This will use the token from HF_TOKEN environment variable
+login()  # This will use the token from HF_TOKEN environment variable
 
 def load_reasonset_data(directory_path):
     """
