@@ -1,0 +1,12 @@
+{
+  "problem": "What is $5^3 - (3^2-5)^3$?",
+  "solution": {
+    "final_solution": "",
+    "working_out": "Alright, let's dive into this problem. The expression we need to evaluate is \\(5^3 - (3^2 - 5)^3\\).\n\n### First Thoughts:\nThe problem involves exponents and subtraction, which reminds me of order of operations. It looks like I should calculate the individual cubes first and then handle the subtraction. But before diving in, I'll rewrite the expression for clarity:\n\n\\[ 5^3 - (3^2 - 5)^3 \\]\n\nThe portion inside the parentheses, \\(3^2 - 5\\), suggests it involves basic arithmetic, and it could simplify before cubing it. Let's break this down:\n\n### Step 1: Investigate the Inner Calculation\n\nFirst, focus on the \\(3^2 - 5\\) part:\n\n- \\(3^2\\) is \\(9\\). So inside the parentheses, it becomes \\(9 - 5\\).\n- Simplifying this gives \\(9 - 5 = 4\\).\n\nWith this result, the expression now looks like:\n\n\\[ 5^3 - 4^3 \\]\n\n### Step 2: Compute the Cubes\n\n**Calculating \\(5^3\\):**\n\n\\[ 5^3 = 5 \\times 5 \\times 5 \\]\n\n- \\(5 \\times 5 = 25\\)\n- \\(25 \\times 5 = 125\\)\n\nThus, \\(5^3 = 125\\).\n\n**Calculating \\(4^3\\):**\n\n\\[ 4^3 = 4 \\times 4 \\times 4 \\]\n\n- \\(4 \\times 4 = 16\\)\n- \\(16 \\times 4 = 64\\)\n\nSo, \\(4^3 = 64\\).\n\n### Step 3: Perform the Subtraction\n\nNow substitute back into the expression:\n\n\\[ 5^3 - 4^3 = 125 - 64 \\]\n\nPerforming the subtraction:\n\n- \\(125 - 64 = 61\\)\n\n### Final Thoughts:\nI took a logical approach with the given steps, simplifying the expression and verifying each calculation independently. Nothing seems out of place, and my final result seems consistent with the arithmetic carried out at each stage.\n\n### Conclusion:\nAfter carefully working through the problem step by step, the final answer to the expression \\(5^3 - (3^2 - 5)^3\\) is \\(61\\).",
+    "is_correct": true,
+    "iterations": 1,
+    "error_description": null,
+    "log_directory": "logs/solutions/20241116_173708"
+  },
+  "ground_truth": "We simplify the expression inside the parentheses first.  Simplifying the exponent first, and then subtracting, we get $3^2-5 = 9 - 5 = 4$.  Then, the whole expression is $5^3 - 4^3$.  Once again simplifying exponents first, we get $125 - 64$, which gives us $\\boxed{61}$."
+}

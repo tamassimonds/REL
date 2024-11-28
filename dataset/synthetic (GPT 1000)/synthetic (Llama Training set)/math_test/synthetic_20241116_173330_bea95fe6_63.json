@@ -1,0 +1,12 @@
+{
+  "problem": "Compute $\\dbinom{30}{27}$.",
+  "solution": {
+    "final_solution": "",
+    "working_out": "Alright, let's take a deep dive into this problem! We're tasked with calculating \\(\\dbinom{30}{27}\\). \n\n### Initial Thoughts:\n\n1. **Understanding Binomial Coefficients**: The binomial coefficient \\(\\dbinom{n}{k}\\) is defined as the number of ways to choose \\(k\\) items from \\(n\\) items without regard to order. Mathematically, it's given as:\n\n   \\[\n   \\dbinom{n}{k} = \\frac{n!}{k!(n-k)!}\n   \\]\n\n2. **Symmetry Property**: I remember from past problems that \\(\\dbinom{n}{k} = \\dbinom{n}{n-k}\\). Ah, this is useful because \\(\\dbinom{30}{27}\\) simplifies to \\(\\dbinom{30}{3}\\). \n\n### Plan & Calculations:\n\n#### Step 1: Calculate \\(\\dbinom{30}{3}\\)\n\n- Reflecting: Okay, instead of calculating \\(\\dbinom{30}{27}\\) directly, I'll calculate \\(\\dbinom{30}{3}\\) because of the symmetry property. Let's see how this goes.\n\n\\[\n\\dbinom{30}{3} = \\frac{30!}{3!(30-3)!} = \\frac{30!}{3! \\cdot 27!}\n\\]\n\n#### Step 2: Simplify the Factorials\n\n- **Simplifying Steps**: Focus on the factor \\( \\frac{30!}{27!} \\), which is the part of the factorial that we are interested in as the \\(27!\\) in both numerator and denominator will cancel each other out.\n\n- Rewrite it:\n\n\\[\n30 \\times 29 \\times 28 = 24360\n\\]\n\n- Dividing by \\(3!\\): Knowing \\(3! = 6\\),\n\n\\[\n\\dbinom{30}{3} = \\frac{24360}{6} = 4060\n\\]\n\n#### Step 3: Verifying the Calculations \n\n- **Quick Sanity Check**: Does this answer feel right? Considering \\(\\dbinom{30}{3}\\), a moderate number, reflects picking 3 out of 30 things \u2014 yup, this makes sense!\n\n- I\u2019ll reflect by considering a smaller case. For example, \\(\\dbinom{5}{2} = \\frac{5 \\times 4}{2 \\times 1} = 10\\). The process feels consistent!\n\n### Final Thoughts:\n\n- **Conclusion**: So, to circle back to the original question, \\(\\dbinom{30}{27}\\) is indeed equal to \\(\\dbinom{30}{3}\\), and the answer is 4060.\n\nReflecting on the steps, each seemed to flow logically and check out numerically. Got it! This solution holds together well\u2014no abrupt insights, but rather a steady reflection on symmetry and simplification worked in our favor. \n\nNice! That feels satisfying.",
+    "is_correct": true,
+    "iterations": 1,
+    "error_description": null,
+    "log_directory": "logs/solutions/20241116_173321"
+  },
+  "ground_truth": "$\\dbinom{30}{27}=\\dbinom{30}{3}=\\dfrac{30 \\times 29 \\times 28}{3!} = \\boxed{4060}$."
+}

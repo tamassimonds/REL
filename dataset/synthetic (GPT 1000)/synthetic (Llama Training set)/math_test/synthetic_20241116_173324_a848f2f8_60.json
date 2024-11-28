@@ -1,0 +1,12 @@
+{
+  "problem": "If $\\sqrt{400}=\\sqrt{81}+\\sqrt{n}$, then what is the value of $n$?",
+  "solution": {
+    "final_solution": "",
+    "working_out": "Alright, let's dive into this problem step by step. \n\n### Understanding the Problem:\nThe equation given is \\(\\sqrt{400} = \\sqrt{81} + \\sqrt{n}\\). We need to find what \\(n\\) is. \n\nHmm, it seems like this problem involves some arithmetic with square roots. My first instinct is to simplify each square root and see where that takes us. I remember doing something similar where I simplified the expression before solving it.\n\n### Step 1: Simplifying the Square Roots:\nLet's tackle each square root individually:\n\n1. **\\(\\sqrt{400}\\)**:\n   - Oh, right! 400 is a perfect square. \\(\\sqrt{400} = 20\\) because \\(20 \\times 20 = 400\\).\n\n2. **\\(\\sqrt{81}\\)**:\n   - 81 is another perfect square. \\(\\sqrt{81} = 9\\) because \\(9 \\times 9 = 81\\).\n\nNow, substitute these values back into the original equation:\n\n\\[ 20 = 9 + \\sqrt{n} \\]\n\n### Step 2: Solving for \\(\\sqrt{n}\\):\nAlright, the equation now reads \\(20 = 9 + \\sqrt{n}\\). This reminds me of simple algebra, where I need to isolate \\(\\sqrt{n}\\). \n\nTo find \\(\\sqrt{n}\\), I subtract 9 from both sides:\n\n\\[ 20 - 9 = \\sqrt{n} \\]\n\n\\[ 11 = \\sqrt{n} \\]\n\nHmm, everything seems to be simplifying nicely so far. \n\n### Step 3: Solving for \\(n\\):\nNow that I have \\(\\sqrt{n} = 11\\), I need to find \\(n\\). To do this, I square both sides of the equation:\n\n\\[\nn = 11^2\n\\]\n\nClearly, \\(11^2 = 121\\).\n\n### Reflection and Verification:\nSo, \\(n\\) should be 121. Let me quickly check my calculations:\n\n- \\(\\sqrt{400} = 20\\)\n- \\(\\sqrt{81} = 9\\)\n- Which leads us to \\(20 = 9 + \\sqrt{121}\\), and \\(\\sqrt{121} = 11\\) because \\(11 \\times 11 = 121\\).\n- The equations hold correct, confirming that \\(n = 121\\).\n\nPerfect! The numbers align with the original problem statement. \n\n### Conclusion:\nThe value of \\(n\\) is \\(\\boxed{121}\\).\n\nIt looks like everything checks out. This step-by-step approach really helps ensure nothing slips through the cracks. It was especially useful to simplify and verify at each step.",
+    "is_correct": true,
+    "iterations": 1,
+    "error_description": null,
+    "log_directory": "logs/solutions/20241116_173317"
+  },
+  "ground_truth": "Not to be fooled by the square roots, we rewrite the equation as $20=9+\\sqrt{n}.$ Thus, $\\sqrt{n}=11$ and $n=\\boxed{121}.$"
+}

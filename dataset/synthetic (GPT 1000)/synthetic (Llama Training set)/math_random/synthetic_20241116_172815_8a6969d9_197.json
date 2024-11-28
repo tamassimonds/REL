@@ -1,0 +1,12 @@
+{
+  "problem": "If $n$ is $1$ less than a multiple of $50$, then what is the remainder when $n^2+2n+3$ is divided by $50$?",
+  "solution": {
+    "final_solution": "",
+    "working_out": "**First Thoughts:**  \nWhen I first read this problem, I notice it's about division and congruences. The problem states that \\( n \\) is 1 less than a multiple of 50, which means mathematically, \\( n = 50k - 1 \\) for some integer \\( k \\). I need to find the remainder when \\( n^2 + 2n + 3 \\) is divided by 50. This reminds me of congruence relations, such as using modulo arithmetic.\n\n**Brainstorming Different Strategies:**  \n- **Substitution:** The direct substitution of \\( n = 50k - 1 \\) in the expression might help simplify the problem, as the factor of 50 could lead to simple calculations.\n- **Expansion and Congruences:** Expand \\( (50k - 1)^2 \\) and the entire expression, then simplify using modulo 50.\n- **Special Cases:** Explore specific values of \\( k \\) to find a pattern, like starting with small numbers, \\( k = 0, 1, 2 \\) etc. \n\n**Let's Explore Substitution:**\n\n\\[ n = 50k - 1 \\]\n\nSubstitute into the expression \\( n^2 + 2n + 3 \\):\n\n\\[ n^2 = (50k - 1)^2 = (50k)^2 - 2 \\cdot 50k + 1^2 = 2500k^2 - 100k + 1 \\]\n\n\\[ 2n = 2(50k - 1) = 100k - 2 \\]\n\nSo the entire expression is:\n\n\\[ n^2 + 2n + 3 = 2500k^2 - 100k + 1 + 100k - 2 + 3 = 2500k^2 + 2 \\]\n\n**Check Simplification:**\n\nObserve that \\( 2500k^2 \\) is fully divisible by 50, so:\n\n\\[ 2500k^2 \\equiv 0 \\pmod{50} \\]\n\nThus, the simplified expression becomes:\n\n\\[ 2500k^2 + 2 \\equiv 0 + 2 \\equiv 2 \\pmod{50} \\]\n\nThis means the remainder when \\( n^2 + 2n + 3 \\) is divided by 50 is \\( 2 \\).\n\n**Reflections and Verification:**\n\n- **Special Cases:** Testing with a few values of \\( k \\), such as \\( k = 0, 1, 2 \\) confirms the simplification is holding true.\n- **Quick Checks:** This result seems reasonable. The usage of modulo helped manage the large terms effectively, reducing computation and making it manageable.\n\nTherefore, the remainder when \\( n^2 + 2n + 3 \\) is divided by 50 is definitively \\( 2 \\).",
+    "is_correct": true,
+    "iterations": 1,
+    "error_description": null,
+    "log_directory": "logs/solutions/20241116_172806"
+  },
+  "ground_truth": "We have $n = 50a-1$ for some integer $a$, so $n\\equiv -1\\pmod{50}$. Therefore, \\begin{align*}\nn^2+2n+3 &\\equiv (-1)^2+2(-1)+3 \\\\\n&\\equiv 1-2+3 \\\\\n&\\equiv 2\\quad\\pmod{50}.\n\\end{align*}The remainder when $n^2+2n+3$ is divided by $50$ is $\\boxed{2}$."
+}
