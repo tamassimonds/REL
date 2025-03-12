@@ -9,6 +9,7 @@ from lib.generate_cot_solution import generate_iterative_solution as generate_it
 from lib.generate_solution import generate_iterative_solution as generate_iterative_solution
 from datetime import datetime
 import uuid
+import time
 
 CONCURRENT_TASKS = 100
 NUM_SAMPLES = 1000
@@ -64,16 +65,18 @@ async def generate_single_sample(
     validate_solutions: bool = False
 ) -> bool:
     try:
+        print(f"\n[Sample {sample_index}] Starting generation...")
+        
         get_question_func = DATASET_FUNCTIONS.get(dataset_type)
         if not get_question_func:
             raise ValueError(f"Invalid dataset type: {dataset_type}")
             
         problem, ground_truth = get_question_func()
-        prompt = COT_PROMPT.format(problem=problem)
+        print(f"[Sample {sample_index}] Got question, generating solution...")
         
         model_solution = await generation_func(
             model=inference_model,
-            question=prompt,
+            question=COT_PROMPT.format(problem=problem),
             solution=ground_truth
         )
         
@@ -82,17 +85,18 @@ async def generate_single_sample(
             model_solution = model_solution.get('final_solution', '')
         
         if not model_solution or model_solution.strip() == "":
-            print(f"Sample {sample_index}: Generated solution was empty, skipping...")
+            print(f"[Sample {sample_index}] ❌ Generated solution was empty")
             return False
         
         if validate_solutions:
+            print(f"[Sample {sample_index}] Validating solution...")
             is_correct, is_bad_response = await evaluate_text(
                 eval_model=eval_model,
                 modelAnswer=model_solution,
                 groundTruthAnswer=ground_truth
             )
             if not (is_correct and not is_bad_response):
-                print(f"Sample {sample_index}: Generated solution was incorrect or invalid, trying again...")
+                print(f"[Sample {sample_index}] ❌ Solution validation failed")
                 return False
         
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -107,11 +111,11 @@ async def generate_single_sample(
         with open(output_file, 'w') as f:
             json.dump(data, f, indent=2)
         
-        print(f"Successfully generated sample {sample_index}")
+        print(f"[Sample {sample_index}] ✅ Successfully generated and saved")
         return True
         
     except Exception as e:
-        print(f"Error generating sample {sample_index}: {e}")
+        print(f"[Sample {sample_index}] ❌ Error: {str(e)}")
         return False
 
 async def generate_synthetic_data(
@@ -123,6 +127,14 @@ async def generate_synthetic_data(
     concurrent_tasks: int = CONCURRENT_TASKS,
     validate_solutions: bool = True
 ):
+    start_time = time.time()
+    print(f"\n{'='*50}")
+    print(f"Starting synthetic data generation:")
+    print(f"Dataset type: {dataset_type}")
+    print(f"Target samples: {num_samples}")
+    print(f"Concurrent tasks: {concurrent_tasks}")
+    print(f"{'='*50}\n")
+    
     # Create dataset-specific subfolder
     output_dir = os.path.join(output_dir, dataset_type)
     Path(output_dir).mkdir(parents=True, exist_ok=True)
@@ -158,11 +170,22 @@ async def generate_synthetic_data(
             tasks.remove(task)
             if await task:
                 successful_generations += 1
-                print(f"Progress: {successful_generations}/{num_samples}")
+                elapsed_time = time.time() - start_time
+                avg_time_per_sample = elapsed_time / successful_generations
+                estimated_remaining = avg_time_per_sample * (num_samples - successful_generations)
+                
+                print(f"\n{'='*30}")
+                print(f"Progress: {successful_generations}/{num_samples} ({(successful_generations/num_samples)*100:.1f}%)")
+                print(f"Elapsed time: {elapsed_time/60:.1f} minutes")
+                print(f"Estimated remaining: {estimated_remaining/60:.1f} minutes")
+                print(f"{'='*30}\n")
 
-        # If we failed to generate some samples, create new tasks to replace them
-        if successful_generations + len(tasks) < num_samples:
-            continue
+    total_time = time.time() - start_time
+    print(f"\n{'='*50}")
+    print(f"Generation completed!")
+    print(f"Total time: {total_time/60:.1f} minutes")
+    print(f"Average time per sample: {total_time/num_samples:.1f} seconds")
+    print(f"{'='*50}\n")
 
 if __name__ == "__main__":
     # Example usage

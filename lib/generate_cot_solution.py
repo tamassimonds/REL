@@ -219,13 +219,18 @@ async def generate_iterative_solution(
             )
             
         temperature *= 0.9
-        update_prompt = PromptManager.create_final_prompt(
+        
+        # Use improvement_prompt for all iterations except the last one
+        if iteration < max_iterations - 2:
+            update_prompt = PromptManager.create_improvement_prompt(
+                question, full_working_out, result.error_description)
+        else:
+            update_prompt = PromptManager.create_final_prompt(
                 question, full_working_out, solution)
 
         # Generate new solution and append to full working out
         new_working_out = await generate_cot_solution_simple(
             model, update_prompt, temperature)
-        # full_working_out = f"{full_working_out}\n\n{new_working_out}"
         full_working_out = new_working_out
 
         logger.log_iteration(iteration + 1, update_prompt, new_working_out, 
