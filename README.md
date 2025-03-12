@@ -1,6 +1,6 @@
 # REL (Reasoning Enhancement Loop)
 
-REL is a novel framework for generating synthetic worked solutions to enhance the reasoning capabilities of Large Language Models (LLMs). It acts as a variation to the STaR to more thoughtful worked soltions. This repository contains the implementation of the REL pipeline as described in our [paper](https://arxiv.org/abs/2412.04645).
+REL is a novel framework for generating synthetic worked solutions to enhance the reasoning capabilities of Large Language Models (LLMs). It acts as a variation to the STaR to more thoughtful worked soltions. This repository contains the implementation of the REL pipeline as described in our [paper](https://arxiv.org/abs/2412.04645). It also includes the human worked solutions mentioned in the paper.
 
 ## Overview
 
@@ -41,9 +41,9 @@ pip install -r requirements.txt
 
 ### Usage
 
-1. **Creating Worked Solutions**:
+1. **Testing Worked Solutions**:
 ```python
-python main.py --mode create_solutions
+python main.py
 ```
 
 2. **Running the REL Pipeline**:
@@ -72,36 +72,3 @@ If you use this code or our findings in your research, please cite:
 }
 ```
 
-# Core dependencies
-torch>=2.0.0
-transformers>=4.30.0
-numpy>=1.24.0
-pandas>=2.0.0
-
-# LLM and API interactions
-openai>=1.0.0
-anthropic>=0.3.0  # For Claude API interactions
-tiktoken>=0.5.0   # For token counting
-
-# Data processing and analysis
-scipy>=1.10.0
-scikit-learn>=1.2.0
-
-# Text processing
-nltk>=3.8.0
-spacy>=3.6.0
-
-# Progress tracking and logging
-tqdm>=4.65.0
-wandb>=0.15.0  # For experiment tracking
-tensorboard>=2.13.0
-
-# Development tools
-pytest>=7.3.0
-black>=23.3.0
-isort>=5.12.0
-flake8>=6.0.0
-
-# Optional: Speech-to-text (as mentioned in paper for data collection)
-SpeechRecognition>=3.10.0
-pyaudio>=0.2.13  # For audio input
